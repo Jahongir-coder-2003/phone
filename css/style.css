@@ -6,7 +6,6 @@
 }
 
 body {
- 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,10 +18,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-.phone-bg { background-color: green; }
-.messages-bg { background-color: blue; }
-.camera-bg { background-color: red; }
-.clock-bg { background-color: purple; }
 
 .samsung-phone {
   position: relative;
@@ -31,30 +26,28 @@ body {
   background-color: black;
   border-radius: 40px;
   overflow: hidden;
-  border: 12px solid #333;
+  border: 8px solid #333;
 }
 
 .camera-cutout {
   position: absolute;
   top: 0;
   left: 50%;
-
-  width: 12px;
-  height: 12px;
+  width: 15px;
+  height: 15px;
   background-color: black;
-  border: 1px solid white;
+  border: 2px solid white;
   opacity: 0.6;
   border-radius: 50%;
   z-index: 10;
   margin-top: 2px;
 }
 
-
-
 .screen {
   width: 100%;
   height: 100%;
-  background: linear-gradient(black, white);
+  background-image: url(../images/photo_2025-05-06_11-51-26.jpg);
+  background-position: center;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -69,12 +62,17 @@ body {
   margin-bottom: 24px;
   padding-top: 4px;
 }
-
+.status-icons {
+  display: flex;
+  gap: 5px;
+}
+i {
+  font-size: 14px;
+}
 .time {
   font-size: 14px;
   font-weight: 500;
 }
-
 
 .battery {
   display: flex;
@@ -91,7 +89,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;
   margin-bottom: 32px;
-  margin-top: 60px;
+  margin-top: 100px;
 }
 
 .app-icon {
@@ -120,14 +118,52 @@ body {
   font-size: 20px;
 }
 
-
 .dock {
-  background-color: rgba(50, 50, 50, 0.4);
-  border-radius: 24px;
-  padding: 16px;
+  margin-bottom: 30px;
   display: flex;
   justify-content: space-around;
   margin-top: auto;
 }
 
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 220px;
+  gap: 10px;
+}
+.dots div {
+  width: 7px;
+  height: 7px;
+  background-color: white;
+  border-radius: 50%;
+}
 
+
+.alarm-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.alarm-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.alarm-modal.hidden {
+  display: none;
+}
+
+#alarm-time {
+  font-size: 16px;
+  margin: 10px 0;
+}

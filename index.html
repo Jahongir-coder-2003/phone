@@ -18,9 +18,13 @@
         <div class="status-bar">
           <div class="time" id="current-time">00</div>
           <div class="status-icons">
+            <i class="fa-solid fa-volume-high"></i>
+            <i class="fa-solid fa-wifi"></i>
+            <i class="fa-solid fa-signal"></i>
             <div class="battery">
               <span id="battery">0</span>
-              <i class="fas fa-battery-three-quarters"></i>
+              <i class="fa-solid fa-battery-three-quarters"></i>
+
             </div>
           </div>
         </div>
@@ -28,51 +32,80 @@
         <div class="app-grid">
           <div class="app-icon">
             <div class="icon-bg phone-bg">
-              <i class="fas fa-phone"></i>
+              <img src="./images/photo_2025-05-14_14-06-03.png" alt="">
+
             </div>
-            <span>Phone</span>
+            <span>Telefon</span>
           </div>
           <div class="app-icon">
             <div class="icon-bg messages-bg">
-              <i class="fas fa-comment"></i>
+              <img src="./images/photo_2025-05-14_14-06-18.png" alt="">
             </div>
-            <span>Messages</span>
+            <span>Xabarlar</span>
           </div>
           <div class="app-icon">
             <div class="icon-bg camera-bg">
-              <i class="fas fa-camera"></i>
+              <img src="./images/photo_2025-05-14_14-06-33.png" alt="">
             </div>
-            <span>Camera</span>
+            <span>Kamera</span>
           </div>
           <div class="app-icon">
-            <div class="icon-bg clock-bg">
-              <i class="fas fa-clock"></i>
+            <div class="icon-bg " id="clock-bg">
+              <img src="./images/photo_2025-05-14_14-06-46.png" alt="">
             </div>
-            <span>Clock</span>
+            <span>Soat</span>
           </div>
           <div class="app-icon empty"></div>
         </div>
-
+        <div class="dots">
+          <div></div>
+          <div></div>
+        </div>
         <div class="dock">
           <div class="app-icon">
             <div class="icon-bg phone-bg">
-              <i class="fas fa-phone"></i>
+              <img src="./images/photo_2025-05-14_14-06-03.png" alt="">
             </div>
-            <span>Phone</span>
+            <span>Telefon</span>
           </div>
           <div class="app-icon">
             <div class="icon-bg messages-bg">
-              <i class="fas fa-comment"></i>
+              <img src="./images/photo_2025-05-14_14-06-18.png" alt="">
             </div>
-            <span>Messages</span>
+            <span>Xabarlar</span>
           </div>
           <div class="app-icon">
             <div class="icon-bg camera-bg">
-              <i class="fas fa-camera"></i>
+              <img src="./images/photo_2025-05-14_14-06-33.png" alt="">
             </div>
-            <span>Camera</span>
+            <span>Kamera</span>
           </div>
         </div>
+
+        <div class="menus">
+          <img src="./images/image-removebg-preview.png" alt="">
+        </div>
+
+
+        <!-- Alarm Modal -->
+        <div id="alarm-modal" class="alarm-modal hidden">
+          <div class="alarm-box">
+            <h3>⏰ Alarm o'rnating</h3>
+            <p>Hozirgi vaqt: <span id="live-time">00:00:00</span></p>
+            <input type="time" id="alarm-time">
+            <button id="set-alarm">Alarmni belgilash</button>
+            <br>
+            <button id="close-alarm">Yopish</button>
+
+            <button id="stop-alarm" class="hidden">Stop</button>
+          </div>
+
+        </div>
+
+
+        <audio id="alarm-audio" src="./audio/twirling-intime-lenovo-k8-note-alarm-tone-41440.mp3"
+          preload="auto"></audio>
+
 
       </div>
     </div>
