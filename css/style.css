@@ -138,14 +138,13 @@ i {
   border-radius: 50%;
 }
 
-
 .alarm-modal {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -158,7 +157,22 @@ i {
   border-radius: 10px;
   text-align: center;
 }
-
+.alarm-box input {
+  width:250px;
+  font-size: 30px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.alarm-box button {
+  font-size: 15px;
+  background: grey;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
 .alarm-modal.hidden {
   display: none;
 }
